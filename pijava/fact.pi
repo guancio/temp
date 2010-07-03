@@ -1,0 +1,14 @@
+fact ?* y,res
+if y==0
+   res!0
+if y==1
+   res!1
+else
+   (new res1)(
+      fact!(y-1)(res1) |
+      res1?v->res!(y*v)
+   )
+
+(new res)(
+     fact!(10, res)|
+     res?v->print)

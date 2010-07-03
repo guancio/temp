@@ -1,0 +1,5 @@
+fact ?* y
+if y==0
+   res!0
+if y==1
+   res!1

@@ -1,0 +1,2 @@
+add?*(x,y,r)->r!(x+y)
+(new resp)(add!(1,2,resp) | resp?v->print v)
