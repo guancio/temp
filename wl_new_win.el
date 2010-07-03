@@ -1,0 +1,21 @@
+(defun guancio ()
+  "Show next line of the message."
+  (interactive)
+  (message "guancio")
+  (message (buffer-name wl-message-buffer))
+  (message "guancio1")
+  (let (m-buffer-name  (buffer-name wl-message-buffer))
+    (message "guancio2")
+    (message (buffer-name wl-message-buffer))
+    (message "guancio3")
+    (select-frame-set-input-focus
+     (make-frame)
+     )
+    (message "guancio5")
+    (switch-to-buffer  m-buffer-name)
+    (message m-buffer-name)
+    )
+  ;; (message wl-message-buffer)
+  ;; (make-frame-command)
+  
+)
