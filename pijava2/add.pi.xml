@@ -1,0 +1,15 @@
+<new channel="add">
+  <par>
+    <bangReceive channel="add" binders="x,y,r">
+      <send channel="r" value="+ x y"/>
+    </bangReceive>
+    <new channel="resp">
+      <par>
+	<send channel="add" value="1,2,resp"/>
+	<receive channel="resp" binders="v">
+	  <x_print value="v"/>
+	</receive>
+      </par>
+    </new>
+  </par>
+</new>
